@@ -1,66 +1,10 @@
-## Foundry
+# DAO (Decentralized Autonomous Organization)
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+## What is a DAO?
 
-Foundry consists of:
+`A Decentralized Autonomous Organization (DAO)` is a blockchain-based organization run collectively by its members, without centralized leadership. Decisions within a DAO are made through transparent voting, using smart contracts to enforce rules and automate processes. Members typically participate by holding governance tokens, which grant voting rights to influence proposals, fund allocation, and organizational policies.
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
-
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+## What we are going to do?
+1. We are going to have a contract controlled by a DAO
+2. Every transaction that the DAO wants to send has to be voted on
+3. We will use ERC20 tokens for voting  
