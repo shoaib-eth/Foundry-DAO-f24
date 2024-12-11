@@ -10,6 +10,10 @@ contract Box is Ownable {
     // Event to broadcast the new value
     event ValueChanged(uint256 newValue);
 
+    constructor(address initialOwner) Ownable(initialOwner) {
+        // Your constructor code here
+    }
+
     // Store a new value in the contract
     function store(uint256 newValue) public onlyOwner {
         s_value = newValue;
